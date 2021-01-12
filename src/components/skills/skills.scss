@@ -1,0 +1,29 @@
+.skills {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    h2 {
+        font-size: 40px;
+        margin: 0;
+        padding: 25px;
+    }
+    .skill-list {
+        font-size: 80px;
+        .skill-icon {
+            padding: 5px 25px;
+            color: #36454F;
+        }
+        .skill-svg {
+            padding: 5px 25px;
+            fill: #35454F !important; 
+        }
+        .row {
+            padding: 20px 0px;
+            .row-item {
+                display: inline-block;
+            }
+            .desc {
+                font-size: 16px;
+            }
+        }
+    }
+}
