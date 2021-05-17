@@ -10,8 +10,6 @@ import gold from './project-previews/preview-008.webp'
 import num from './project-previews/preview-009.webp'
 import crwn from './project-previews/preview-010.webp'
 import travel from './project-previews/preview-011.webp'
-import fifa from './project-previews/preview-012.webp'
-import stock from './project-previews/preview-013.webp'
 
 const projectList = [
   {
