@@ -1,7 +1,79 @@
-.experience {
-    h2 {
-        font-size: 40px;
-        margin: 0;
-        padding: 25px;
+@media (max-width: 768px) {
+    .experience {
+        padding: 15px 0px;
+    
+        h2 {
+            font-size: 40px;
+            margin: 0 auto;
+            text-align: center;
+        }
+        .section {
+            padding: 10px;
+            margin: 10px
+        }
+        .role {
+            font-size: 18px;
+        }
+        .employer {
+            font-size: 18px;
+        }
+        .dates {
+            font-size: 13px;
+        }
+        .responsibilities {
+            font-size: 13px;
+            text-align: left;
+        }
+        ul {
+            list-style-type: none;
+            padding-inline-start: 20px;
+        }
+        li::before {
+            content: '→';
+            padding-right: 8px;
+        }
+    }
+}
+
+@media (min-width: 769px) {
+    .experience {
+        padding: 30px 0;
+        h2 {
+            font-size: 40px;
+            margin: 0 auto;
+            text-align: center;
+        }
+        .work-experience {
+            display: inline-block;
+        }
+        .section {
+            width: 45%;
+            float: left;
+            margin: 2.5%;
+        }
+        .role {
+            font-size: 18px;
+        }
+        .employer {
+            font-size: 18px;
+        }
+        .dates {
+            font-size: 16px;
+            padding: 5px;
+        }
+        .responsibilities {
+            font-size: 14px;
+            padding: 5px;
+            text-align: left;
+            margin: 0 auto;
+            padding-left: 40px;
+        }
+        ul {
+            list-style-type: none;
+        }
+        li::before {
+            content: '→';
+            padding-right: 8px;
+        }
     }
 }

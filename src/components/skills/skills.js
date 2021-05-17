@@ -1,17 +1,23 @@
 import React from 'react'
 
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-
-import redux from '../../assets/redux-icon.svg'
-import graphql from '../../assets/graphql-icon.svg'
-import mongodb from '../../assets/mongodb-icon.svg'
-import ads from '../../assets/ads-icon.svg'
-import analytics from '../../assets/analytics-icon.svg'
-import seo from '../../assets/seo-icon.svg'
-import heroku from '../../assets/heroku-icon.svg'
-import firebase from '../../assets/firebase-icon.svg'
-
 import './skills.scss'
+
+import github from '../../assets/icons/github-icon.svg'
+import javascript from '../../assets/icons/javascript-icon.svg'
+import node from '../../assets/icons/node-icon.svg'
+import html from '../../assets/icons/html-icon.svg'
+import css from '../../assets/icons/css-icon.svg'
+import react from '../../assets/icons/react-icon.svg'
+import redux from '../../assets/icons/redux-icon.svg'
+import graphql from '../../assets/icons/graphql-icon.svg'
+import mongodb from '../../assets/icons/mongodb-icon.svg'
+import wordpress from '../../assets/icons/wordpress-icon.svg'
+import ads from '../../assets/icons/ads-icon.svg'
+import analytics from '../../assets/icons/analytics-icon.svg'
+import seo from '../../assets/icons/seo-icon.svg'
+import markdown from '../../assets/icons/markdown-icon.svg'
+import heroku from '../../assets/icons/heroku-icon.svg'
+import firebase from '../../assets/icons/firebase-icon.svg'
 
 function Skills() {
     return (
@@ -20,25 +26,25 @@ function Skills() {
             <div className='skill-list'>
                 <div className='row'>
                     <div className='row-item'>
-                        <FontAwesomeIcon icon={['fab', 'js']}  className='skill-icon' />
+                        <img src={javascript} className='skill-svg' alt='javascript'/>
                         <div className='desc'>JavaScript</div>
                     </div>
                     <div className='row-item'>
-                        <FontAwesomeIcon icon={['fab', 'node']}  className='skill-icon' />
+                        <img src={node} className='skill-svg' alt='node'/>
                         <div className='desc'>Node.js</div>
                     </div>
                     <div className='row-item'>
-                        <FontAwesomeIcon icon={['fab', 'html5']}  className='skill-icon' />
+                        <img src={html} className='skill-svg' alt='html'/>
                         <div className='desc'>HTML5</div>
                     </div>
                     <div className='row-item'>
-                        <FontAwesomeIcon icon={['fab', 'css3-alt']}  className='skill-icon' />
-                        <div className='desc'>CSS 3</div>
+                        <img src={css} className='skill-svg' alt='css'/>
+                        <div className='desc'>CSS</div>
                     </div>
                 </div>
                 <div className='row'>
                     <div className='row-item'>
-                        <FontAwesomeIcon icon={['fab', 'react']} className='skill-icon' />
+                        <img src={react} className='skill-svg' alt='react'/>
                         <div className='desc'>React.js</div>
                     </div>
                     <div className='row-item'>
@@ -56,7 +62,7 @@ function Skills() {
                 </div>
                 <div className='row'>
                     <div className='row-item'>
-                        <FontAwesomeIcon icon={['fab', 'wordpress']}  className='skill-icon' />
+                        <img src={wordpress} className='skill-svg' alt='google wordpress'/>
                         <div className='desc'>WordPress</div>
                     </div>
                     <div className='row-item'>
@@ -74,11 +80,11 @@ function Skills() {
                 </div>
                 <div className='row'>
                     <div className='row-item'>
-                        <FontAwesomeIcon icon={['fab', 'github']}  className='skill-icon' />
+                        <img src={github} className='skill-svg' alt='github'/>
                         <div className='desc'>GitHub</div>
                     </div>
                     <div className='row-item'>
-                        <FontAwesomeIcon icon={['fab', 'markdown']}  className='skill-icon' />
+                        <img src={markdown} className='skill-svg' alt='markdown'/>
                         <div className='desc'>Markdown</div>
                     </div>
                     <div className='row-item'>

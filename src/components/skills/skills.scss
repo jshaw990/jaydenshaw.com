@@ -1,28 +1,62 @@
-.skills {
-    padding-top: 30px;
-    padding-bottom: 30px;
-    h2 {
-        font-size: 40px;
-        margin: 0;
-        padding: 25px;
-    }
-    .skill-list {
-        font-size: 80px;
-        .skill-icon {
-            padding: 5px 25px;
-            color: #36454F;
+@media (max-width: 768px) {
+    .skills {
+        padding: 15px 0;
+        h2 {
+            font-size: 40px;
+            margin: 0;
+            padding: 10px;
         }
-        .skill-svg {
-            padding: 5px 25px;
-            fill: #35454F !important; 
-        }
-        .row {
-            padding: 20px 0px;
-            .row-item {
-                display: inline-block;
+        .skill-list {
+            font-size: 30px;
+            .skill-icon {
+                padding: 5px 25px;
+                color: #253038;
             }
-            .desc {
-                font-size: 16px;
+            .skill-svg {
+                padding: 5px 25px;
+                width: 30px;        
+                fill: #35454F !important; 
+            }
+            .row {
+                padding: 10px 0px;
+                .row-item {
+                    display: inline-block;
+                }
+                .desc {
+                    font-size: 15px;
+                }
+            }
+        }
+    }
+}
+@media (min-width: 769px) {
+    .skills {
+        padding-top: 30px;
+        padding-bottom: 30px;
+        h2 {
+            font-size: 40px;
+            margin: 0;
+            padding: 25px;
+        }
+        .skill-list {
+            font-size: 80px;
+            .skill-icon {
+                padding: 5px 25px;
+                color: #253038;
+            }
+            .skill-svg {
+                width: 80px; 
+                padding: 5px 25px;
+                fill: #35454F !important;
+            }
+            .row {
+                padding: 20px 0px;
+                .row-item {
+                    display: inline-block;
+                }
+                .desc {
+                    font-size: 16px;
+                }
             }
         }
     }
