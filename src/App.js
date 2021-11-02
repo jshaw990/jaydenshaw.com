@@ -17,10 +17,10 @@ import PreviousVisitorModal from './components/previous-visit/previousVisit.comp
 import './App.scss';
 
 function App() {
-	const dispatch = useDispatch() 
+	const dispatch = useDispatch();
 
 	const toggleContact = useSelector(contactIsOpen);
-	const prevVisitor = useSelector(isPreviousVisitor)
+	const prevVisitor = useSelector(isPreviousVisitor);
 
 	const [cookies, setCookie] = useCookies(['user']);
 
@@ -43,24 +43,20 @@ function App() {
 				numberOfVisits: visitInt,
 			};
 
-			const nextYear = new Date() 
-			nextYear.setFullYear(date.getUTCFullYear() + 2) 
-
-			console.log(nextYear)
+			const nextYear = new Date();
+			nextYear.setFullYear(date.getUTCFullYear() + 2);
 
 			setCookie('jaydenshaw.com', cookieData, { path: '/', expires: nextYear });
 		};
 
 		if (getMyCookie) {
-			dispatch(isPreviousVisitor())
+			dispatch(isPreviousVisitor());
 
 			let visitInt = getMyCookie.numberOfVisits;
 
-			setCookieValues(visitInt + 1)
+			setCookieValues(visitInt + 1);
 		} else {
-			console.log('value is false');
-
-			setCookieValues(1)
+			setCookieValues(1);
 		}
 	}, [cookies, setCookie, dispatch]);
 

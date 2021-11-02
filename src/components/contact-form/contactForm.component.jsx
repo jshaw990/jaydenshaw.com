@@ -40,7 +40,6 @@ const ContactForm = () => {
 				})
 				.then((token) => {
 					const currentTime = Date().toLocaleString();
-					console.log(currentTime);
 					setToSend({ ...toSend, time: currentTime });
 					send(SERVICE_ID, TEMPLATE_ID, toSend, USER_ID)
 						.then((response) => {
