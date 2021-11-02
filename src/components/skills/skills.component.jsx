@@ -1,6 +1,6 @@
 import React from 'react'
 
-import './skills.scss'
+import './skills.styles.scss'
 
 import github from '../../assets/icons/github-icon.svg'
 import javascript from '../../assets/icons/javascript-icon.svg'
@@ -19,7 +19,7 @@ import markdown from '../../assets/icons/markdown-icon.svg'
 import heroku from '../../assets/icons/heroku-icon.svg'
 import firebase from '../../assets/icons/firebase-icon.svg'
 
-function Skills() {
+const Skills = () => {
     return (
         <div className='skills' id='skills'>
             <h2>Skills</h2>

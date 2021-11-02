@@ -1,12 +1,12 @@
 import React from 'react' 
 
-import './hero.scss'
+import './hero.styles.scss'
 
 import Type from './type'
 
-function Hero() {
+const Hero = () => {
     return (
-        <div className='hero'>
+        <div className='hero' id='hero'>
                 <div className='heading'>Hi! My name is Jayden Shaw.</div>
             <div className='text'>
                 <span className='about-me'>I'm <Type /></span><br/>

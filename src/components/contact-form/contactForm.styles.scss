@@ -1,0 +1,189 @@
+@import '../../index.scss';
+
+@media (max-width: 769px) {
+	.contact-form {
+		z-index: 999;
+		position: fixed;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		background: $dark1;
+		padding: 30px;
+		border-radius: 50px;
+		width: 50%;
+		min-width: 300px;
+		margin: 0 auto;
+		color: $white;
+
+		.close-icon {
+			position: fixed;
+			top: 10%;
+			right: 10%;
+			padding: 5px;
+			height: 15px;
+			width: 15px;
+		}
+
+		.form-title {
+			padding-bottom: 15px;
+			font-size: 20px;
+		}
+
+		.field-set {
+			width: 100%;
+			display: flex;
+			margin: 5px 0;
+
+			label {
+				margin-right: 5px;
+				text-align: right;
+				width: 25%;
+			}
+
+			input {
+				height: 20px;
+				width: 70%;
+				text-align: left;
+				background-color: transparent;
+				border: 1px solid transparent;
+				border-bottom-color: white;
+				color: $white;
+			}
+		}
+
+		.contact-me {
+			padding-top: 30px;
+			width: 100%;
+			display: block;
+
+			.form-button-cont {
+				width: 100%;
+			}
+
+			.form-submit {
+				width: 70%;
+				display: block;
+				margin: 10px auto;
+				font-size: 13px;
+				border: 2px solid $dark1;
+				background-color: $white;
+				border-radius: 25px;
+				padding: 15px;
+				text-decoration: none;
+				color: $dark1;
+				font-weight: 700;
+				text-transform: uppercase;
+				text-align: center;
+				border: 1px solid $dark1;
+				height: auto;
+				&:hover {
+					color: $white;
+					background-color: $dark1;
+					text-decoration: none;
+					border: 1px solid $white;
+				}
+			}
+
+			label {
+				display: inline-block;
+			}
+
+			input {
+				width: 30px;
+			}
+
+			
+		}
+	}
+}
+
+@media (min-width: 769px) {
+	.contact-form {
+		z-index: 999;
+		position: fixed;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		background: $dark1;
+		padding: 30px;
+		border-radius: 50px;
+		width: 50%;
+		min-width: 300px;
+		margin: 0 auto;
+		color: $white;
+
+		.close-icon {
+			font-size: 15px;
+			position: fixed;
+			top: 10%;
+			right: 10%;
+			padding: 5px;
+			height: 15px;
+			width: 15px;
+			font-weight: 900;
+		}
+
+		.form-title {
+			padding-bottom: 15px;
+			font-size: 20px;
+		}
+
+		.field-set {
+			width: 100%;
+			display: flex;
+			margin: 5px 0;
+
+			label {
+				margin-right: 5px;
+				text-align: right;
+				width: 30%;
+			}
+
+			input {
+				height: 20px;
+				width: 50%;
+				text-align: left;
+				background-color: transparent;
+				border: 1px solid transparent;
+				border-bottom-color: white;
+				color: $white;
+			}
+		}
+
+		.contact-me {
+			padding-top: 30px;
+			width: 100%;
+			display: block;
+
+			.form-submit {
+				width: 70%;
+				display: block;
+				margin: 10px auto;
+				font-size: 13px;
+				border: 2px solid $dark1;
+				background-color: $white;
+				border-radius: 25px;
+				padding: 15px;
+				text-decoration: none;
+				color: $dark1;
+				font-weight: 700;
+				text-transform: uppercase;
+				text-align: center;
+				border: 1px solid $dark1;
+				height: auto;
+				&:hover {
+					color: $white;
+					background-color: $dark1;
+					text-decoration: none;
+					border: 1px solid $white;
+				}
+			}
+
+			input {
+				width: 30px;
+			}
+
+			
+		}
+	}
+}

@@ -17,7 +17,10 @@ function Type() {
                     'a Problem Solver',
                     'a Critical Thinker',
                     'Passionate',
-                    'a Nerd 🤓'
+                    'a Nerd 🤓',
+                    'Punctilious',
+                    'Organized & Efficient',
+                    'a Search Engine Savant'
                 ],
                 autoStart: true,
                 loop: true,

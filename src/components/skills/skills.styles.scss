@@ -1,6 +1,9 @@
+@import '../../index.scss'; 
+
 @media (max-width: 768px) {
     .skills {
         padding: 15px 0;
+        margin-bottom: 50px;
         h2 {
             font-size: 40px;
             margin: 0;
@@ -10,7 +13,7 @@
             font-size: 30px;
             .skill-icon {
                 padding: 5px 25px;
-                color: #253038;
+                color: $dark1;
             }
             .skill-svg {
                 padding: 5px 25px;
@@ -42,7 +45,7 @@
             font-size: 80px;
             .skill-icon {
                 padding: 5px 25px;
-                color: #253038;
+                color: $dark1;
             }
             .skill-svg {
                 width: 80px; 

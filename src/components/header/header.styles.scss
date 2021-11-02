@@ -1,22 +1,26 @@
+@import '../../index.scss'; 
+
 @media (max-width: 768px) {
     .header {
-        height: 80px;
+        height: 85px;
         padding: 0px;
-        background-color: #253038;
-        color: #FFFFFF;
+        background-color: $dark1;
+        color: $white;
         width: 100%;
-        a {
+        a, span {
             padding: 0px 10px;
-            text-decoration: none;
-            color: #FFFFFF;
+            color: $white;
+            cursor: pointer;
         }
         .title {
             text-align: center;
             margin: 0 auto;
+            padding: 15px 0 5px;
+            font-size: 30px;
         }
         .nav {
             text-align: center;
-            margin: 0 auto;
+            margin: 10px auto 0;
             font-size: 13px;
         }
     }
@@ -24,30 +28,30 @@
 
 @media (min-width: 769px) {
     .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
         height: 40px;
         padding: 20px;
-        background-color: #253038;
-        color: #FFFFFF;
+        background-color: $dark1;
+        color: $white;
         position: sticky;
         top: 0;
         z-index: 999;
-        a {
+        a, span {
             padding: 0px 10px;
-            text-decoration: none;
-            color: #FFFFFF;
+            color: $white;
+            cursor: pointer;
         }
         .title {
-            float: left;
             padding-left: 1%;
             margin: 0;
+            font-weight: 700;
+            font-size: 30px;
         }
         .nav {
-            float: right;
             padding-right: 1%;
             padding-top: 8px;
-            :hover {
-                font-weight: 500;
-            }
         }
     }
 }

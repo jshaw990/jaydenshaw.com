@@ -1,11 +1,11 @@
 import React from 'react'
 
-import './projects.scss'
+import './projects.styles.scss'
 
 import github from '../../assets/icons/github-icon.svg'
 import projectList from '../../assets/projectList.js'
 
-function Projects() {
+const Projects = () => {
     return (
         <div className='projects' id='projects'>
             <h2>Selected Projects</h2>
@@ -33,7 +33,12 @@ function Projects() {
                     </div>
                 )
             })}
-            <div><a href='https://github.com/jshaw990' target='_blank' rel='noreferrer'>Checkout more on my GitHub<img src={github} className='icon' alt='github'/></a></div>
+                <div className='link-text'>
+                    <a href='https://github.com/jshaw990' target='_blank' rel='noreferrer'>
+                        Checkout more projects on my GitHub
+                        <img src={github} className='icon' alt='github'/>
+                        </a>
+                </div>
             </div>
         </div>
     )

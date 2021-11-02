@@ -1,19 +1,22 @@
 import React from 'react' 
+import { useDispatch } from 'react-redux'
 
-import './header.scss'
+import './header.styles.scss'
 
-import PDF from '../../assets/Jayden_Shaw_Resume.pdf'
+import { toggleIsOpen } from '../../redux/contactSlice'
 
-function Header() {
+const Header = () => {
+    const dispatch = useDispatch() 
+
     return (
         <div className='header'>
-            <h1 className='title'><a href='/'>Jayden Shaw</a></h1>
+            <h1 className='title'><a href='#hero'>Jayden Shaw</a></h1>
             <div className='nav'>
                 <a href='#projects'>Projects</a>
                 <a href='#skills'>Skills</a>
                 <a href='#experience'>Experience</a>
                 <a href='#contact'>Contact</a>
-                <a href={PDF} target='_blank' download rel='noreferrer'>Resume</a>
+                <span onClick={() => dispatch(toggleIsOpen())}>Resume</span>
             </div>
         </div>
     )
