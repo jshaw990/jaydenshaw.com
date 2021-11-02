@@ -9,7 +9,14 @@
 
 ## Tools Utilized
 - React
+- Redux
 - SCSS
+- React Cookie
 - Netlify
+- Emailjs
 - Google Analytics
+- Google ReCaptcha v3
+- Env-cmd
+- Typewriter Effect
 - Font Awesome
+- Custom Fonts
