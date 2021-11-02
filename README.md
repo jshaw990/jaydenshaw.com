@@ -19,4 +19,4 @@
 - Env-cmd
 - Typewriter Effect
 - Font Awesome
-- Custom Fonts
+- Custom Fonts 
